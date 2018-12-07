@@ -24,13 +24,24 @@ def MergeSort(x):
                 y.pop(0)
             return result
 
-def measureThis(size):
+def measureThis10(size):
     mylist = []
     for i in range(size):
         mylist.add(random.randint(1000, size))
+def measureThis11(size):
+    mylist = []
+    for i in range(size):
+        mylist.add(random.randint(100000, size))
+def measureThis12(size):
+    mylist = []
+    for i in range(size):
+        mylist.add(random.randint(10, size))
+
 
 '''
 
 
 import timeit
-print(timeit.timeit(setup=setup,stmt="measureThis"))
+print(timeit.timeit(setup=setup,stmt="measureThis10"))
+print(timeit.timeit(setup=setup,stmt="measureThis11"))
+print(timeit.timeit(setup=setup,stmt="measureThis12"))
