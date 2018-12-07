@@ -22,8 +22,6 @@ def measureThis(size):
 
 '''
 
-
 import timeit
-mysetup = "from math import sqrt"
 print(timeit.timeit(setup=setup,stmt="measureThis"))
 
