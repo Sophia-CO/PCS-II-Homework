@@ -1,4 +1,12 @@
 # PCS-II-Homework
-   This analysis contains an algorithm of two functions: QuickSort and MergeSort. The QuickSort algorithm is really fast because the inner loop can be easily implemeneted  does not require extra space while Merge Sort performs the same data as quicksort when the data is sorted or not and also requires extra space.
-   Using QuickSort , I changed the array in place and did not use extra storage
-   MergeSort created many arrays while its dividing and conquering 
+   This analysis contains an algorithm of two functions: QuickSort and MergeSort. The QuickSort algorithm is fast because the inner loop can be easily implemented and does not require extra space while Merge Sort performs the same data as quicksort regardless if the data is sorted or not and also requires extra space.
+   MergeSort created many arrays while its dividing and conquering
+   In Merge Sort, the unsorted list is divided into N sublists, each having one element, because a list consisting of one element is always sorted. Then, it repeatedly merges these sublists, to produce new sorted sublists, and in the end, only one sorted list is produced, works as a divide and conquer algorithm with performances always same for worst, average and best case .The array is recursively divided into two halves and take linear time to merge two halves. Multiple for loops are dfeined and this works recursively checking each through each list before moving to the next, requiring an equal amount of additional space as the unsorted list; it’s not at all recommended for sorting large size list.
+  
+    
+    
+    
+    
+    In QuickSort, the function partition is defined and this partition() method(having three parameters: array= arr, low= starting index and high = ending last index) takes a string parameter separator that separates the string at the first occurrence of it. Using a variable i, it should be lower , taking a single number as a pivot, we keep iterating through the list,checking which number is smaller or higher than the pivot, until the whole list is completely sorted.
+    A for loop is created , if the current element is smaller than or equal to pivot, the i variable adds to the index, the array of i and j should be equal to that of j to i, i + one should be returned.  The quicksort function , the starting index should be less than the ending index using an if loop, calling the function pi should be equal to the three parameters mentioned above... the elements should be sorted before and after partition. A new function called measure this is defined , an empty list is created , a for loop is used with a parameter size a , a random interge with size is added to the empty list at position using the import 'timeit', prints the setup and the previously defined function 'MeasureThis', the QuickSort runs faster than the MergeSort with a little time difference...
+  In conclusion, using quickSort is faster because you do not have to use the for loop multiple times, for the Mergesort you have depending on the way the code is written although it is better with 'sorted large linked list'.
